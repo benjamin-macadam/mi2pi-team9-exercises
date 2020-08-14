@@ -18,9 +18,12 @@ def getData():
         
     # create a directory that does yet exists
     dirName = "temp"
-    while os.path.exists(dirName):
-        dirName = dirName++"data"
-    os.mkdir(dirName)
+    dirName = os.path.join(
+        os.getcwd(), dirName
+    )
+    if not os.path.exists(dirName):
+       os.mkdir(dirName)
+
 
     # Uses os.path.join in case anyone is on windows
     zipName = "data.zip"
