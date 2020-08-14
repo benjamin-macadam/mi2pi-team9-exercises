@@ -3,6 +3,11 @@
 \usepackage[utf8]{inputenc}
 \graphicspath{{../Graphics/}}
 
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1pt}
+\setlength{\TPVertModule}{1pt}
+\usepackage{calc}
+
 %Information to be included in the title page:
 \title{Heat Energy Sources in Canada}
 \author{Noah Bolohan, Anton Iatcenko, Ryan Thiessen, Yakine Bahri, Benjamin MacAdam, Alireza Yazdani}
@@ -110,21 +115,50 @@ It contains data described by the following dimensions:
 \end{frame}
 
 
+
+
+
+
+
+
+
+
+
 \begin{frame}
 \frametitle{Cause of the Groupings: Atlantic Provinces (Ben)}
 
-	\begin{tabular}{ c c}
-	  \scalebox{0.3}{\includegraphics[trim={120pt 0 120pt 0}, clip]{Ben_Images/NB.png}}
-	& \scalebox{0.3}{\includegraphics{Ben_Images/NS.png}} \\
-	\scalebox{0.3}{\includegraphics{Ben_Images/NL.png}}
-	& \scalebox{0.3}{\includegraphics{Ben_Images/PE.png}}
-	\end{tabular}
-	Same story in Atlantic region:
+
+
+\includegraphics[width=0.25\linewidth, trim={120pt 50pt 110pt 10pt}, clip]{Ben_Images/NB.png}%
+\includegraphics[width=0.25\linewidth, trim={120pt 50pt 110pt 10pt}, clip]{Ben_Images/NS.png}%
+\includegraphics[width=0.25\linewidth, trim={120pt 50pt 110pt 10pt}, clip]{Ben_Images/NL.png}%
+\includegraphics[width=0.25\linewidth, trim={120pt 50pt 110pt 10pt}, clip]{Ben_Images/PE.png}\\[10pt]
+\includegraphics[width=\linewidth]{leg_bar.png}
+
+
+Same story in Atlantic region:
 	\begin{itemize}
-		\item Newfoundland,New Brunswick: Access to hydro, use electric.
-		\item Prince Edward Island, Nova Scotia: No hydro access, use oil.
+		\item Newfoundland, New Brunswick: access to hydro, use electric.
+		\item Prince Edward Island, Nova Scotia: no hydro access, use oil.
 	\end{itemize}
+
 \end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \begin{frame}
