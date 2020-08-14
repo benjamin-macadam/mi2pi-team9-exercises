@@ -1,14 +1,25 @@
 \documentclass{beamer}
 
+%\usetheme{AnnArbor}
+\usetheme{Boadilla}
+\usecolortheme{beaver}
+
 \usepackage[utf8]{inputenc}
 \graphicspath{{../Graphics/}}
 
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1pt}
+\setlength{\TPVertModule}{1pt}
+\usepackage{calc}
+
 %Information to be included in the title page:
 \title{Heat Energy Sources in Canada}
-\author{Noah Bolohan, Anton Iatcenko, Ryan Thiessen, Yakine Bahri, Benjamin MacAdam, Alireza Yazdani}
-\institute{Math\textsuperscript{Industry}}
+\author[Team 9]{Noah Bolohan, Anton Iatcenko, Ryan Thiessen, Yakine Bahri, Benjamin MacAdam, Alireza Yazdani}
+\institute[]{Math\textsuperscript{Industry}}
 
-\date{August 2020  \\ \vspace{30pt} \includegraphics[scale=0.3]{pims_logo.png} }
+\date{August 2020}
+
+\titlegraphic{\includegraphics[width=2cm]{pims_logo.png}}
 
 
 
@@ -18,7 +29,7 @@
 
 \begin{frame}
 \frametitle{The Data Set (Yakine)}
-\textbf{Primary heating systems and type of energy} : A table contains 2304 series, with data for years 2013, 2015 and 2017
+\textbf{Primary heating systems and types of energy sources} : A table contains 2304 series, with data for the years 2013, 2015 and 2017
 It contains data described by the following dimensions:
 \begin{itemize}
 \item Geography (48 items: Canada; Newfoundland and Labrador; Prince Edward Island; Nova Scotia; ...)
@@ -38,29 +49,37 @@ It contains data described by the following dimensions:
 
 \begin{frame}
 \frametitle{Change Over Time I (Anton)}
+\begin{center}
 \includegraphics[width=0.5\linewidth]{pe.png}%
 \includegraphics[width=0.5\linewidth]{ns.png}\\
-\includegraphics[width=\linewidth]{leg_bar.png}
+\includegraphics[width=0.8\linewidth]{leg_bar.png}
+\end{center}
 \end{frame}
 
 
 \begin{frame}
 \frametitle{Change Over Time II (Anton)}
-\includegraphics[width=0.5\linewidth]{ab.png}%
-\includegraphics[width=0.5\linewidth]{bc.png}\\
-\includegraphics[width=0.5\linewidth]{sk.png}%
-\includegraphics[width=0.5\linewidth]{on.png}\\
-\includegraphics[width=\linewidth]{leg_bar.png}
+\vspace{-10pt}
+\begin{center}
+\includegraphics[width=0.48\linewidth]{ab.png}%
+\includegraphics[width=0.48\linewidth]{bc.png}\\
+\includegraphics[width=0.48\linewidth]{sk.png}%
+\includegraphics[width=0.48\linewidth]{on.png}\\
+\includegraphics[width=0.8\linewidth]{leg_bar.png}
+\end{center}
 \end{frame}
 
 
 \begin{frame}
 \frametitle{Change Over Time III (Anton)}
-\includegraphics[width=0.5\linewidth]{mn.png}%
-\includegraphics[width=0.5\linewidth]{nb.png}\\
-\includegraphics[width=0.5\linewidth]{qc.png}%
-\includegraphics[width=0.5\linewidth]{nl.png}\\
-\includegraphics[width=\linewidth]{leg_bar.png}
+\vspace{-10pt}
+\begin{center}
+\includegraphics[width=0.48\linewidth]{mn.png}%
+\includegraphics[width=0.48\linewidth]{nb.png}\\
+\includegraphics[width=0.48\linewidth]{qc.png}%
+\includegraphics[width=0.48\linewidth]{nl.png}\\
+\includegraphics[width=0.8\linewidth]{leg_bar.png}
+\end{center}
 \end{frame}
 
 
@@ -110,21 +129,49 @@ It contains data described by the following dimensions:
 \end{frame}
 
 
+
+
+
+
+
+
+
+
+
 \begin{frame}
 \frametitle{Cause of the Groupings: Atlantic Provinces (Ben)}
 
-	\begin{tabular}{ c c}
-	  \scalebox{0.3}{\includegraphics{Ben_Images/NB.png}}
-	& \scalebox{0.3}{\includegraphics{Ben_Images/NS.png}} \\
-	\scalebox{0.3}{\includegraphics{Ben_Images/NL.png}}
-	& \scalebox{0.3}{\includegraphics{Ben_Images/PE.png}}
-	\end{tabular}
-	Same story in Atlantic region:
+\begin{center}
+\includegraphics[width=0.25\linewidth, trim={120pt 50pt 110pt 10pt}, clip]{Ben_Images/NB.png}%
+\includegraphics[width=0.25\linewidth, trim={120pt 50pt 110pt 10pt}, clip]{Ben_Images/NS.png}%
+\includegraphics[width=0.25\linewidth, trim={120pt 50pt 110pt 10pt}, clip]{Ben_Images/NL.png}%
+\includegraphics[width=0.25\linewidth, trim={120pt 50pt 110pt 10pt}, clip]{Ben_Images/PE.png}\\[10pt]
+\includegraphics[width=0.8\linewidth]{leg_bar.png}
+\end{center}
+
+Same story in Atlantic region:
 	\begin{itemize}
-		\item Newfoundland,New Brunswick: Access to hydro, use electric.
-		\item Prince Edward Island, Nova Scotia: No hydro access, use oil.
+		\item Newfoundland, New Brunswick: access to hydro, use electric.
+		\item Prince Edward Island, Nova Scotia: no hydro access, use oil.
 	\end{itemize}
+
 \end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \begin{frame}
